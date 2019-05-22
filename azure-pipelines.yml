@@ -23,5 +23,6 @@ steps:
 - script: |
     npm install
     npm run build
+    npx mocha
     mocha test --reporter mocha-junit-reporter
   displayName: 'npm install and build'
